@@ -4,3 +4,5 @@ imports:
 resources:
 - name: redis
   type: redis.jinja
+  properties:
+    external_service: true

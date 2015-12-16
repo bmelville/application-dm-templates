@@ -7,6 +7,7 @@ resources:
   properties:
     # This has to be overwritten since service names are hard coded in the code
     service_name: redis-master
+    external_service: {{ properties['external_service'] }}
     service_port: {{ REDIS_PORT }}
     target_port: {{ REDIS_PORT }}
     container_port: {{ REDIS_PORT }}

@@ -8,3 +8,8 @@ properties:
     type: int
     default: 2
     description: Number of worker replicas.
+  external_service:
+    type: boolean
+    default: false
+    description: If set to true, enable external load balancer.
+
