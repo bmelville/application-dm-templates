@@ -20,6 +20,7 @@ resources:
   properties:
     # This has to be overwritten since service names are hard coded in the code
     service_name: redis-slave
+    external_service: {{ properties['external_service'] }}
     service_port: {{ REDIS_PORT }}
     container_port: {{ REDIS_PORT }}
     replicas: {{ WORKERS }}
